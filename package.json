@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "web": "vite",
+    "build": "vite build",
     "server": "set YTDL_NO_UPDATE=1 && node --watch --no-warnings server/index.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -15,6 +16,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.0.4",
     "@xenova/transformers": "^2.6.0",
     "axios": "^1.5.0",
     "cors": "^2.8.5",
