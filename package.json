@@ -1,13 +1,17 @@
 {
+  "homepage": "https://andre21ac.github.io/Shorts_summary",
   "name": "nlwia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "web": "vite",
-    "server": "set YTDL_NO_UPDATE=1 && node --watch --no-warnings server/index.js"
+    "server": "set YTDL_NO_UPDATE=1 && node --watch --no-warnings server/index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "vite": "^4.4.5"
   },
   "dependencies": {
